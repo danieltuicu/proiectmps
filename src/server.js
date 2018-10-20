@@ -8,8 +8,10 @@ app.get('/', (res, req) => {
     req.send('Hello world');
 });
 
+const PORT = process.env.PORT || 4321;
+
 const server = http.Server(app);
-server.listen(process.env.PORT);
+server.listen(PORT);
 
 const io = socketIO(server);
 
