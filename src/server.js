@@ -5,7 +5,7 @@ const socketIO = require('socket.io');
 const app = express();
 
 app.get('/', (res, req) => {
-    req.send('Hello world');
+    req.send('Hello world!');
 });
 
 const PORT = process.env.PORT || 4321;
