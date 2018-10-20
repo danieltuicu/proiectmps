@@ -9,7 +9,7 @@ app.get('/', (res, req) => {
 });
 
 const server = http.Server(app);
-server.listen(4321);
+server.listen(process.env.PORT);
 
 const io = socketIO(server);
 
